@@ -2,9 +2,10 @@
   "name": "taro-utils",
   "version": "0.0.3",
   "description": "taro-utils",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   },
   "homepage": "https://github.com/limichange/taro-utils#readme",
   "devDependencies": {
-    "@tarojs/taro": "^1.0.3"
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@tarojs/taro": "^1.0.3",
+    "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.3"
   }
 }
