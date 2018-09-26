@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import Taro from '@tarojs/taro-weapp'
 
 export function append (url, params) {
   Object.keys(params).forEach((key, index) => {
