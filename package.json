@@ -1,6 +1,6 @@
 {
   "name": "taro-utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "taro-utils",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/limichange/taro-utils.git"
   },
-  "keywords": ["taro"],
+  "keywords": [
+    "taro"
+  ],
   "author": "limichange<limichange@hotmail.com>",
   "license": "MIT",
   "bugs": {
