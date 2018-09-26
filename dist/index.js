@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var Taro = _interopDefault(require('@tarojs/taro'));
+var Taro = _interopDefault(require('@tarojs/taro-weapp'));
 
 function append(url, params) {
   Object.keys(params).forEach(function (key, index) {

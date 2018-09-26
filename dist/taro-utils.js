@@ -1,6 +1,6 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@tarojs/taro')) :
-  typeof define === 'function' && define.amd ? define(['exports', '@tarojs/taro'], factory) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@tarojs/taro-weapp')) :
+  typeof define === 'function' && define.amd ? define(['exports', '@tarojs/taro-weapp'], factory) :
   (factory((global.TaroUtils = {}),global.Taro));
 }(this, (function (exports,Taro) { 'use strict';
 
