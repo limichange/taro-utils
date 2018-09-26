@@ -70,7 +70,7 @@ function _objectSpread(target) {
 }
 
 var react = {
-  loading: function loading() {
+  showLoading: function showLoading() {
     var title = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '读取中...';
     return Taro.showLoading({
       title: title,
@@ -80,7 +80,7 @@ var react = {
   hideLoading: function hideLoading() {
     Taro.hideLoading();
   },
-  toast: function toast(config) {
+  showToast: function showToast(config) {
     if (Object(config) !== config) {
       var title = config;
       config = {
@@ -96,7 +96,7 @@ var react = {
   hideToast: function hideToast() {
     Taro.hideToast();
   },
-  modal: function modal(options) {
+  showModal: function showModal(options) {
     return Taro.showModal(options);
   }
 };
