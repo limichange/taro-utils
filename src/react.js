@@ -1,7 +1,7 @@
 import Taro from '@tarojs/taro-weapp'
 
 export default {
-  loading (title = '读取中...') {
+  showLoading (title = '读取中...') {
     return Taro.showLoading({
       title,
       mask: true
@@ -10,7 +10,7 @@ export default {
   hideLoading () {
     Taro.hideLoading()
   },
-  toast (config) {
+  showToast (config) {
     if (Object(config) !== config) {
       let title = config
 
@@ -28,7 +28,7 @@ export default {
   hideToast () {
     Taro.hideToast()
   },
-  modal (options) {
+  showModal (options) {
     return Taro.showModal(options)
   }
 }
