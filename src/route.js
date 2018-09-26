@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro'
 
-export function append (url, params): string {
+export function append (url, params) {
   Object.keys(params).forEach((key, index) => {
     const type = index === 0 ? '?' : '&'
 
@@ -11,7 +11,7 @@ export function append (url, params): string {
 }
 
 export default {
-  redirect (url: string, params: Object = {}) {
+  redirect (url, params = {}) {
     Taro.redirectTo({
       url: append(url, params)
     })
